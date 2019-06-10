@@ -1,0 +1,29 @@
+h1{
+    color: fuchsia;
+    font-family: "Comic Sans MS";
+}
+h2{
+    color: fuchsia;
+    font-family: "Comic Sans MS";
+}
+h3{
+    color: fuchsia;
+    font-family: "Comic Sans MS";
+}
+body{
+    text-align: center;
+    background-image: url("img/giphy.gif");
+}
+#total{
+    color: fuchsia;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+}
+#high{
+    color: fuchsia;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+}
+#kawhi{
+    image: url("img/kawhi.gif");
+}
