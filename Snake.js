@@ -31,6 +31,8 @@ function Snake() {
                 console.log('starting over');
                 this.total = 0;
                 this.tail = [];
+                alert("Your Grandma is better than you!");
+                document.location.reload();
             }
         }
 
@@ -84,6 +86,9 @@ function Snake() {
             }
             if (this.tail.length === 30) {
                 frameRate(25);
+            }
+            if (this.tail.length === 40){
+                frameRate(30);
             }
             rect(this.x, this.y, scl, scl);
 

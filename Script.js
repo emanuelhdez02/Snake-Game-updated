@@ -17,9 +17,7 @@ function pickLocation(){
     food.mult(scl);
 }
 
-function mousePressed() {
-    s.total++;
-}
+
 
 function draw() {
     background(0,255,0);
@@ -36,16 +34,25 @@ function draw() {
     rect(food.x, food.y, scl, scl)
 }
 
-function keyPressed() {
-    if (keyCode === UP_ARROW) {
-        s.dir(0, -1);
-    }else if (keyCode === DOWN_ARROW){
-        s.dir(0, 1);
-    }else if (keyCode === RIGHT_ARROW){
-        s.dir(1, 0);
-    }else if (keyCode === LEFT_ARROW){
-        s.dir(-1, 0);
-    }
-
+function keyPressed(e) {
+    console.log(e.keyCode);
+     if (e.keyCode === UP_ARROW) {
+         s.dir(0, -1);
+     }else if (keyCode === DOWN_ARROW){
+         s.dir(0, 1);
+     }else if (keyCode === RIGHT_ARROW){
+         s.dir(1, 0);
+     }else if (keyCode === LEFT_ARROW){
+         s.dir(-1, 0);
+     }
+     if (keyCode === 87){
+         s.dir(0, -1);
+     }else if (keyCode === 83){
+         s.dir(0, 1);
+     }else if (keyCode === 68){
+         s.dir(1, 0);
+     }else if (keyCode === 65){
+         s.dir(-1, 0);
+     }
 }
 
